@@ -1,0 +1,31 @@
+[{
+    "CodiDP": 1,
+    "Tipus": "Referendum FR",
+    "Pregunta": "Sabies que ?",
+    "DataO": "20/04/2015",
+    "DataF": "22/04/2015"
+},
+
+{
+    "CodiDP": 2,
+    "Tipus": "Votacio FR",
+    "Pregunta": "Sabies que ?",
+    "DataO": "20/04/2015",
+    "DataF": "22/04/2015"
+},
+
+{
+    "CodiDP": 3,
+    "Tipus": "Enquesta FR",
+    "Pregunta": "Sabies que ?",
+    "DataO": "20/04/2015",
+    "DataF": "22/04/2015"
+},
+
+{
+    "CodiDP": 4,
+    "Tipus": "Enquesta FR",
+    "Pregunta": "Sabies que ?",
+    "DataO": "20/04/2015",
+    "DataF": "22/04/2015"
+}]

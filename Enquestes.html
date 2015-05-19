@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="Index/html; charset=iso-8859-1" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Democràcia Andorra</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
+    <script> function Enviar (){
+      alert("Enviat correctament")}
+  </script>
+</head>
+
+<body>
+    <div id="contenedor">    <!-- Contenedor -->
+        <div id="cabecera">   <!-- Cabecera -->
+            <h1>Democràcia Andorra</h1>
+            <div id="buscador">  <!-- Buscador -->
+                <form action="" method="get">
+                    <fieldset>
+                       <legend>Buscador</legend>
+                       <label for="busqueda">Buscar:</label>
+                       <input type="text" name="busqueda" id="busqueda" size="20" />
+                       <input type="submit" name="botonbuscar" value="Buscar" />
+                   </fieldset>
+               </form>
+           </div>
+
+           <div class="clear"></div>
+       </div>
+
+       <div id="Menu">  <!-- Menu -->
+        <ul>
+            <li><a href="./Index.html">Inici</a></li>
+            <li><a href="./Enquestes.html">Enquestes</a></li>
+            <li><a href="./Referendum.html">Referendum</a></li>
+            <li><a href="./Votar.html">Votar</a></li>
+            <li><a href="./Forum.html">Forum</a></li>
+            <li><a href="./Formulario.html">Inscriu-te</a></li>
+            <li><a href="./Videos.html">Videos</a></li>
+            <li><a href="./Audio.html">Audio</a></li>
+            <li><a href="./PDFS.html">PDFs</a></li>
+            <li><a href="./Admin.html">Admin</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div id="contenido">  <!-- Contenido -->
+        <form action="./Index.html" method="post">
+            <h2>Enquesta</h2>
+            <fieldset>
+                <legend>Quina edat té ? </legend>
+                <p>
+                    <input type="radio" name="Edat" value="A" checked="checked" /> 10 a 20 anys <br/>
+                    <input type="radio" name="Edat" value="B" checked="checked" /> 21 a 30 anys <br/>
+                    <input type="radio" name="Edat" value="C" checked="checked" /> 31 a 40 anys <br/>
+                    <input type="radio" name="Edat" value="D" checked="checked" /> 41 a 50 anys <br/>
+                    <input type="radio" name="Edat" value="E" checked="checked" /> 51 a 60 anys <br/>
+                    <input type="radio" name="Edat" value="F" checked="checked" /> més de 60 anys <br/>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Treballa o Estudia ? </legend>
+                <p>
+                    <input type="radio" name="Rutina" value="A" checked="checked" /> Treballo <br/>
+                    <input type="radio" name="Rutina" value="B" checked="checked" /> Estudio <br/>
+                    <input type="radio" name="Rutina" value="C" checked="checked" /> Treballant i Estudiant <br/>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quantes hores setmanals treballa (en el cas de que treballi) ? </legend>
+                <p>
+                    <input type="radio" name="Hores" value="A" checked="checked" /> menys de 10 hores <br/>
+                    <input type="radio" name="Hores" value="B" checked="checked" /> entre 10 i 20 hores <br/>
+                    <input type="radio" name="Hores" value="C" checked="checked" /> entre 21 i 30 hores <br/>
+                    <input type="radio" name="Hores" value="D" checked="checked" /> entre 31 i 40 hores <br/>
+                    <input type="radio" name="Hores" value="E" checked="checked" /> més de 40 hores <br/>
+                </p>
+            </fieldset>
+        </br>
+        <input type="submit" name="enviar" value="Enviar Enquesta" onclick=Enviar() />
+    </form>
+</div>
+
+<div id="pie">   <!-- Pie -->
+    <span class="copyright">
+     &copy; Copyright Ivan Pereira
+ </span>
+ <div class="clear"></div>
+</div>
+</div>
+
+</body>
+</html>

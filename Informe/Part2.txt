@@ -1,0 +1,17 @@
+Barra de Menú : 
+#Menu ul li a:hover {  //Quant pasem el ratolí per sobre d'alguna opció
+  background: #2288BB;
+}
+
+Barra Lateral Esquerra :
+#Lateral li a:hover {  //Quant pasem el ratolí per sobre d'alguna opció
+  background-color: #2288BB;
+  color: #000000;
+}
+
+Part de slider :
+#nav a:hover div {  //Quant pasem el ratolí per sobre d'algún cercle
+    background: #888;
+}
+
+Per acabar tenim el javascript posat a Index.html (inici) que fa que les imatges cambien cada 5 segons d'esquerra a dreta.

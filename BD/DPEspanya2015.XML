@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<persones>
+	<persona>
+		<codiDP>1</codiDP>
+		<tipus>Referendum ESP</tipus>
+		<pregunta>Sabies Que ?</pregunta>
+		<dataO>20/04/2015</dataO>
+		<dataF>22/04/2015</dataF>
+	</persona>
+
+	<persona> 
+		<codiDP>2</codiDP>
+		<tipus>Referendum ESP</tipus>
+		<pregunta>Sabies Que ?</pregunta>
+		<dataO>20/04/2015</dataO>
+		<dataF>22/04/2015</dataF>
+	</persona>
+
+	<persona>
+		<codiDP>3</codiDP>
+		<tipus>Enquesta ESP</tipus>
+		<pregunta>Sabies Que ?</pregunta>
+		<dataO>20/04/2015</dataO>
+		<dataF>22/04/2015</dataF>
+	</persona>
+
+	<persona>
+		<codiDP>4</codiDP>
+		<tipus>Votacio ESP</tipus>
+		<pregunta>Sabies Que ?</pregunta>
+		<dataO>20/04/2015</dataO>
+		<dataF>22/04/2015</dataF>
+	</persona>
+</persones>

@@ -1,0 +1,246 @@
+
+/* ----- Estilos básicos -------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../Imagenes/fondo_pagina.png");
+  background-repeat: repeat;
+  font: 70%/160% "verdana", sans-serif;
+  color: #3E3E3E;
+}
+
+a {
+  color:#192666;
+}
+a:hover {
+  color:#4F6AD7;
+}
+ 
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+ 
+.clear {
+  clear: both;
+}
+ 
+h1, h2, h3, h4, h5 {
+  margin: 1em 0;
+  padding:0;
+}
+ 
+h1 {
+  font-size: 260%;
+  font-family: "georgia", serif;
+  font-weight: normal;
+}
+ 
+h2 {
+  font-size:180%;
+  font-family: "georgia", serif;
+  font-weight:normal;
+}
+ 
+h3 {
+  font-size:120%;
+  font-weight:bold;
+}
+ 
+ul, ol {
+  margin: 1em 0 1em 2em;
+  padding:0;
+}
+
+/* ----- Contenedor -------------------------------- */  
+#contenedor{
+  width:800px;
+  margin: 20px auto 0 auto;
+  }
+  
+/* ----- Cabecera ---------------------------------- */ 
+#cabecera{
+  width: 800px;
+  position: relative;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #0B5578 url("../Imagenes/fondo_cabecera.png") no-repeat;
+  color: #FFF;
+  clear:both;
+  }
+  
+#cabecera h1 {
+  position: absolute;
+  left: 35%;
+  top: 73px;
+}  
+  
+#cabecera #buscador { float: right; }
+
+#cabecera #buscador {
+  position: absolute;
+  top: 173px;
+  right: -10px;
+}
+
+#cabecera #buscador legend {
+  display: none;
+}
+ 
+#cabecera #buscador fieldset {
+  border: none;
+}
+
+#busqueda{
+  width: 59%;
+}
+  
+/* ----- Menú --------------------------------------- */
+#Menu {
+  background: #2D2D2D;
+  margin: 0 0px;
+  padding: 0px 0 0 0;
+}
+
+#Menu ul {
+  margin: 0 8px;
+  padding: 0;
+  list-style:none;
+}
+
+#Menu ul li {
+  margin: 0 5px 0 0;
+  padding: 0;
+  float:left;
+}
+
+#Menu ul li a {
+  display: block; 
+  position: relative;
+  padding: 5px 13px;
+  border: 0;
+  background: #2D2D2D;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#Menu ul li a:hover {
+  background: #2288BB;
+}
+
+#Menu ul li.seleccionado a {
+  background: #FFF;
+  color: #6D6F81;
+}
+  
+/*----- Contenido --------------------------------------------- */  
+#contenido{
+  float:right;
+  padding-left: 5px;
+  width:78%;
+  background: #E1E1E1;
+}
+
+#contenido{
+  width: 795px;
+  margin: 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #DEE5FD;
+  color:#0B5578;
+}
+
+#contenido h2{
+  color: #000000;
+}
+  
+/*----- Pie --------------------------------------------------- */  
+#pie{
+  clear:both;
+  }
+  
+#pie {
+  background: #2D2D2D;
+  margin: 0 0px;
+  padding: 6px 0 0 0;
+}
+  
+#pie .copyright{
+  float:right;
+  color: #FFFFFF;
+  margin: 0 6px;
+}
+
+/*ALTRES*/
+
+#cajaformulario{
+  margin-top: 2%;
+}
+
+#formulario{
+  margin-left: 35%;
+}
+
+#crud{
+  margin-left: 14%;
+  margin-top: 2%;
+}
+.item > p{
+  display: inline-block;
+}
+
+.borrar{
+  display: none;
+}
+
+#zonadatos{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  max-height: 300px;
+  overflow:scroll; 
+}
+
+#combo{
+  display: none;
+  width:40%;
+  height: 25px;
+}
+
+.item{
+  border: 1px solid;
+  padding: 1%;
+  color: white;
+}
+
+.item:nth-child(odd){
+  background: #2288BB;
+}
+
+.item:nth-child(even){
+  background:  #0B5578;
+}
+
+#boto1, #boto2, #boto3, #boto4, #boto5, #boto6{
+  padding: 10px;
+  border: 1px;
+  border-radius: 2px;
+  background: #2D2D2D;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"]{
+  width:40%;
+}
+
+#boto1:hover, #boto2:hover, #boto3:hover, #boto4:hover, #boto5:hover, #boto6:hover{
+  background: #2288BB;
+  cursor: pointer;
+
+}
+
+
+
+
