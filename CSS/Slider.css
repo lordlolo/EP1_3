@@ -1,11 +1,11 @@
 
 #slider {
-    width: 470px;
+    width: 530px;
     height: 321px;
 }
 
 #slider img {
-    width: 778px;
+    width: 810px;
     height: 318px;
     display: none;
     position: absolute;
@@ -13,14 +13,14 @@
     padding: 5px;
 }
 
-#nav {
+#navi {
     width: 426px;
     height: 10px;
     padding-top: 10px;
 
 }
 
-#nav a {
+#navi a {
     padding: 0 5px 0 0;
     float: left;
     position: relative;
@@ -28,7 +28,7 @@
     left: 85%;
 }
 
-#nav a:hover div {
+#navi a:hover div {
     background: #888;
 }
 

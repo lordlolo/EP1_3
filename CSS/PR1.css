@@ -54,13 +54,13 @@ ul, ol {
 
 /* ----- Contenedor -------------------------------- */  
 #contenedor{
-  width:800px;
+  width:830px;
   margin: 20px auto 0 auto;
   }
   
 /* ----- Cabecera ---------------------------------- */ 
 #cabecera{
-  width: 800px;
+  width: 830px;
   position: relative;
   height: 200px;
   margin: 0;
@@ -145,7 +145,7 @@ ul, ol {
 }
 
 #contenido{
-  width: 795px;
+  width: 825px;
   margin: 20px 0;
   padding-bottom: 8px;
   border-bottom: 1px solid #DEE5FD;
