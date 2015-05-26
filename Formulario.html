@@ -8,14 +8,39 @@
   <title>Democràcia Andorra</title>
   <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="./CSS/menu.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/menu.css">     
   <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/ValForm.js"></script>      
+  <script type="text/javascript" src="js/ValForm.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>      
 </head>
 
 <body>
   <div id="contenedor">    <!-- Contenedor -->
+    <div id="bar">
+      <div id="loginContainer">
+        <a href="#" id="loginButton"><span>Entra</span></a>
+        <div style="clear:both"></div>
+        <div id="loginBox">                
+          <form id="loginForm">
+            <fieldset id="body">
+              <fieldset>
+                <label for="email">Correu Electrònic</label>
+                <input type="text" name="email" id="email" />
+              </fieldset>
+              <fieldset>
+                <label for="password">Contrasenya</label>
+                <input type="password" name="password" id="password" />
+              </fieldset>
+              <input type="submit" id="login" value="Entra" />
+              <label for="checkbox"><input type="checkbox" id="checkbox" />Enrecordar</label>
+            </fieldset>
+            <span><a href="#">Has olvidat la contrasenya?</a></span>
+          </form>
+        </div>
+      </div>
+      <!-- Login Ends Here -->
+    </div>
     <div id="cabecera">   <!-- Cabecera -->
      <h1>Democràcia Andorra</h1>
      <div id="buscador">
@@ -31,28 +56,28 @@
 
    <div class="clear"></div>
 
- <ul id="nav">
-  <li><a href="./Index.html">Inici</a></li>
-  <li><a href="./Enquestes.html">Enquestes</a></li>
-  <li><a href="./Referendum.html">Referendum</a></li>
-  <li><a href="./Votar.html">Votar</a></li>
-  <li><a href="./Forum.html">Forum</a></li>
-  <li><a href="./Formulario.html">Inscriu-te</a></li>
-  <li><a href="./Videos.html">Videos</a></li>
-  <li><a href="./Audio.html">Audio</a></li>
-  <li><a href="./PDFS.html">PDFs</a></li>
-  <li><a href="#">Admin</a>
-    <ul class="subs">
-      <li><a href="JsonXml.html">Json/XML</a></li>
-      <li><a href="#">Usuaris</a></li>
-      <li><a href="#">Multimèdia</a></li>
-      <li><a href="#">Participació</a></li>
-    </ul>
-  </li>
-  <div id="lavalamp"></div> 
-</ul>
-<div class="clear"></div>
-</div> 
+   <ul id="nav">
+    <li><a href="./Index.html">Inici</a></li>
+    <li><a href="./Enquestes.html">Enquestes</a></li>
+    <li><a href="./Referendum.html">Referendum</a></li>
+    <li><a href="./Votar.html">Votar</a></li>
+    <li><a href="./Forum.html">Forum</a></li>
+    <li><a href="./Formulario.html">Inscriu-te</a></li>
+    <li><a href="./Videos.html">Videos</a></li>
+    <li><a href="./Audio.html">Audio</a></li>
+    <li><a href="./PDFS.html">PDFs</a></li>
+    <li><a href="#">Admin</a>
+      <ul class="subs">
+        <li><a href="JsonXml.html">Json/XML</a></li>
+        <li><a href="#">Usuaris</a></li>
+        <li><a href="#">Multimèdia</a></li>
+        <li><a href="#">Participació</a></li>
+      </ul>
+    </li>
+    <div id="lavalamp"></div> 
+  </ul>
+  <div class="clear"></div>
+</div>
 
 <div id="contenido">  <!-- Contenido -->    
   <form action="./Formulario.html" method="post" >
@@ -66,6 +91,15 @@
     Cognoms <br/>
     <input type="text" id="apellido" name="apellidos" value="" size="40" maxlength="80" />
     <div id="cerr" style= "display: none;">Entra un minin de 2 lletres i un màxim de 20 lletres</div> 
+    <br/>
+
+    Telèfon <br/>
+    <input type="text" id="telefono" name="Telefono" value="+376" size="40" maxlength="12" />
+    <div id="err" style= "display: none;">Entra 6 digits</div> 
+    <br/>
+
+    Data de naixement </br>
+    <input type="text" id="datepicker" size="40"/>
     <br/>
 
     Telèfon <br/>

@@ -135,7 +135,7 @@ ul, ol {
     border-radius:3px 0 3px 3px;
     -moz-border-radius:3px 0 3px 3px;
     margin-top:-1px;
-    background:#d2e0ea;
+    background:#2D2D2D;
     padding:6px;
 }
 
@@ -160,7 +160,7 @@ fieldset#body {
     float:left;
     padding:0;
     border:0;
-    *margin:-3px 9px 0 0; /* IE7 Fix */
+    margin:-3px 9px 0 0; /* IE7 Fix */
 }
 
 #body label {
@@ -216,8 +216,7 @@ fieldset#body {
 }
 
 #loginForm span a {
-    color:#3a454d;
-    text-shadow:1px 1px #fff;
+    color:#FFFFFF;
     font-size:12px;
 }
 
