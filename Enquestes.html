@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <title>Democràcia Andorra</title>
     <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./CSS/menu.css">
     <script> function Enviar (){
       alert("Enviat correctament")}
   </script>
@@ -29,22 +30,27 @@
 
            <div class="clear"></div>
        </div>
-
-       <div id="Menu">  <!-- Menu -->
-        <ul>
-            <li><a href="./Index.html">Inici</a></li>
-            <li><a href="./Enquestes.html">Enquestes</a></li>
-            <li><a href="./Referendum.html">Referendum</a></li>
-            <li><a href="./Votar.html">Votar</a></li>
-            <li><a href="./Forum.html">Forum</a></li>
-            <li><a href="./Formulario.html">Inscriu-te</a></li>
-            <li><a href="./Videos.html">Videos</a></li>
-            <li><a href="./Audio.html">Audio</a></li>
-            <li><a href="./PDFS.html">PDFs</a></li>
-            <li><a href="./Admin.html">Admin</a></li>
-        </ul>
+          <ul id="nav">
+                <li><a href="./Index.html">Inici</a></li>
+                <li><a href="./Enquestes.html">Enquestes</a></li>
+                <li><a href="./Referendum.html">Referendum</a></li>
+                <li><a href="./Votar.html">Votar</a></li>
+                <li><a href="./Forum.html">Forum</a></li>
+                <li><a href="./Formulario.html">Inscriu-te</a></li>
+                <li><a href="./Videos.html">Videos</a></li>
+                <li><a href="./Audio.html">Audio</a></li>
+                <li><a href="./PDFS.html">PDFs</a></li>
+                <li><a href="#">Admin</a>
+                    <ul class="subs">
+                        <li><a href="JsonXml.html">Json/XML</a></li>
+                        <li><a href="#">Usuaris</a></li>
+                        <li><a href="#">Multimèdia</a></li>
+                        <li><a href="#">Participació</a></li>
+                    </ul>
+                </li>
+                <div id="lavalamp"></div>   
+            </ul>
         <div class="clear"></div>
-    </div>
 
     <div id="contenido">  <!-- Contenido -->
         <form action="./Index.html" method="post">

@@ -3,58 +3,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="Cançons/html; charset=iso-8859-1" />
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-    <title>Democràcia Andorra</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
+  <meta http-equiv="Content-Type" content="Cançons/html; charset=iso-8859-1" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <title>Democràcia Andorra</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./CSS/menu.css">
 </head>
 
 <body>
-    <div id="contenedor">    <!-- Contenedor -->
-        <div id="cabecera">   <!-- Cabecera -->
-            <h1>Democràcia Andorra</h1>
-            <div id="buscador">
-                <form action="" method="get">
-                    <fieldset>
-                       <legend>Buscador</legend>
-                       <label for="busqueda">Buscar:</label>
-                       <input type="text" name="busqueda" id="busqueda" size="20" />
-                       <input type="submit" name="botonbuscar" value="Buscar" />
-                   </fieldset>
-               </form>
-           </div>
+  <div id="contenedor">    <!-- Contenedor -->
+    <div id="cabecera">   <!-- Cabecera -->
+      <h1>Democràcia Andorra</h1>
+      <div id="buscador">
+        <form action="" method="get">
+          <fieldset>
+           <legend>Buscador</legend>
+           <label for="busqueda">Buscar:</label>
+           <input type="text" name="busqueda" id="busqueda" size="20" />
+           <input type="submit" name="botonbuscar" value="Buscar" />
+         </fieldset>
+       </form>
+     </div>
 
-           <div class="clear"></div>
-       </div>
+     <div class="clear"></div>
+   </div>
 
-       <div id="Menu">  <!-- Menu -->
-        <ul>
-            <li><a href="./Index.html">Inici</a></li>
-            <li><a href="./Enquestes.html">Enquestes</a></li>
-            <li><a href="./Referendum.html">Referendum</a></li>
-            <li><a href="./Votar.html">Votar</a></li>
-            <li><a href="./Forum.html">Forum</a></li>
-            <li><a href="./Formulario.html">Inscriu-te</a></li>
-            <li><a href="./Videos.html">Videos</a></li>
-            <li><a href="./Audio.html">Audio</a></li>
-            <li><a href="./PDFS.html">PDFs</a></li>
-            <li><a href="./Admin.html">Admin</a></li>
-        </ul>
-        <div class="clear"></div>
-    </div>
+   <ul id="nav">
+    <li><a href="./Index.html">Inici</a></li>
+    <li><a href="./Enquestes.html">Enquestes</a></li>
+    <li><a href="./Referendum.html">Referendum</a></li>
+    <li><a href="./Votar.html">Votar</a></li>
+    <li><a href="./Forum.html">Forum</a></li>
+    <li><a href="./Formulario.html">Inscriu-te</a></li>
+    <li><a href="./Videos.html">Videos</a></li>
+    <li><a href="./Audio.html">Audio</a></li>
+    <li><a href="./PDFS.html">PDFs</a></li>
+    <li><a href="#">Admin</a>
+      <ul class="subs">
+        <li><a href="JsonXml.html">Json/XML</a></li>
+        <li><a href="#">Usuaris</a></li>
+        <li><a href="#">Multimèdia</a></li>
+        <li><a href="#">Participació</a></li>
+      </ul>
+    </li>
+    <div id="lavalamp"></div> 
+  </ul>
+  <div class="clear"></div>
 
-    <div id="contenido">  <!-- Contenido -->
-        <h2>Cançons Recents</h2>
-        Late Night Alumni-Empty Streets (Seamus Haji and Paul Emmanuel Remix).mp3
-        <audio controls="controls" preload="auto" >
-          <source src="./Musica/Late Night Alumni-Empty Streets (Seamus Haji and Paul Emmanuel Remix).mp3" type="audio/mpeg" />
-          El navegador NO soporta el audio
-      </audio>
-  </div>
 
-  <div id="pie">   <!-- Pie -->
-    <span class="copyright">
-     &copy; Copyright Ivan Pereira
+<div id="contenido">  <!-- Contenido -->
+  <h2>Cançons Recents</h2>
+  Late Night Alumni-Empty Streets (Seamus Haji and Paul Emmanuel Remix).mp3
+  <audio controls="controls" preload="auto" >
+    <source src="./Musica/Late Night Alumni-Empty Streets (Seamus Haji and Paul Emmanuel Remix).mp3" type="audio/mpeg" />
+    El navegador NO soporta el audio
+  </audio>
+</div>
+
+<div id="pie">   <!-- Pie -->
+  <span class="copyright">
+   &copy; Copyright Ivan Pereira
  </span>
  <div class="clear"></div>
 </div>
