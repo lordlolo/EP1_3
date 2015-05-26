@@ -71,7 +71,7 @@
         <li><a href="JsonXml.html">Json/XML</a></li>
         <li><a href="#">Usuaris</a></li>
         <li><a href="#">Multimèdia</a></li>
-        <li><a href="#">Participació</a></li>
+        <li><a href="Participacions.html">Participació</a></li>
       </ul>
     </li>
     <div id="lavalamp"></div> 
@@ -79,7 +79,7 @@
   <div class="clear"></div>
 
 <div id="contenido">  <!-- Contenido -->    
-  <form action="./Formulario.html" method="post" >
+  <form action="./php/alta.php" method="post" >
    <fieldset>
     <legend>DADES PERSONALS</legend>
     Nom <br/>
@@ -90,15 +90,6 @@
     Cognoms <br/>
     <input type="text" id="apellido" name="apellidos" value="" size="40" maxlength="80" />
     <div id="cerr" style= "display: none;">Entra un minin de 2 lletres i un màxim de 20 lletres</div> 
-    <br/>
-
-    Telèfon <br/>
-    <input type="text" id="telefono" name="Telefono" value="+376" size="40" maxlength="12" />
-    <div id="err" style= "display: none;">Entra 6 digits</div> 
-    <br/>
-
-    Data de naixement </br>
-    <input type="text" id="datepicker" size="40"/>
     <br/>
 
     Telèfon <br/>
@@ -172,7 +163,7 @@
   </fieldset>
 
 </br>     
-<input type="submit" id="save" name="enviar" value="Inscriu-te" />
+<input type="submit" id="submit" name="enviar" value="Inscriu-te" />
 <input type="reset" name="limpiar" value="Borrar les dades introduïdes" />
 <input type="button" id="mostrar" name="ver" value="Mostrar les dades introduïdes" /> 
 </form>   
