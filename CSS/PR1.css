@@ -244,46 +244,6 @@ input:focus {
   width: 59%;
 }
   
-/* ----- Menú --------------------------------------- */
-#Menu {
-  background: #2D2D2D;
-  margin: 0 0px;
-  padding: 0px 0 0 0;
-}
-
-#Menu ul {
-  margin: 0 8px;
-  padding: 0;
-  list-style:none;
-}
-
-#Menu ul li {
-  margin: 0 5px 0 0;
-  padding: 0;
-  float:left;
-}
-
-#Menu ul li a {
-  display: block; 
-  position: relative;
-  padding: 5px 13px;
-  border: 0;
-  background: #2D2D2D;
-  color: #FFFFFF;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#Menu ul li a:hover {
-  background: #2288BB;
-}
-
-#Menu ul li.seleccionado a {
-  background: #FFF;
-  color: #6D6F81;
-}
-  
 /*----- Contenido --------------------------------------------- */  
 #contenido{
   float:right;

@@ -11,8 +11,8 @@
     <script> function Votar (){
       alert("Gràcies per votar")}
   </script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <body>
@@ -42,8 +42,8 @@
             <!-- Login Ends Here -->
         </div>
         <div id="cabecera">   <!-- Cabecera -->
-         <h1>Democràcia Andorra</h1>
-         <div id="buscador">
+           <h1>Democràcia Andorra</h1>
+           <div id="buscador">
             <form action="" method="get">
                 <fieldset>
                 	<legend>Buscador</legend>
@@ -79,26 +79,25 @@
     </ul>
     <div class="clear"></div>
 
+<div id="contenido">  <!-- Contenido -->
+    <form action="./Index.html" method="post"> 
+        <h2>Partits disponibles</h2>
+        <input type="radio" name="Partit" value="A" checked="checked" /> Partit A <br/>
+        <input type="radio" name="Partit" value="B" /> Partit B </br>
+        <input type="radio" name="Partit" value="C" /> Partit C </br>
+        <input type="radio" name="Partit" value="D" /> Partit D </br>
+        <input type="radio" name="Partit" value="Blanc" /> Vot Blanc </br>
+        <br/><br/> 
+        <input type="submit" name="enviar" value="Votar" onclick=Votar() />
+    </form>
+</div>
 
-    <div id="contenido">  <!-- Contenido -->
-        <form action="./Index.html" method="post"> 
-            <h2>Partits disponibles</h2>
-            <input type="radio" name="Partit" value="A" checked="checked" /> Partit A <br/>
-            <input type="radio" name="Partit" value="B" /> Partit B </br>
-            <input type="radio" name="Partit" value="C" /> Partit C </br>
-            <input type="radio" name="Partit" value="D" /> Partit D </br>
-            <input type="radio" name="Partit" value="Blanc" /> Vot Blanc </br>
-            <br/><br/> 
-            <input type="submit" name="enviar" value="Votar" onclick=Votar() />
-        </form>
-    </div>
-
-    <div id="pie">   <!-- Pie -->
-        <span class="copyright">
-           &copy; Copyright Ivan Pereira
-       </span>
-       <div class="clear"></div>
-   </div>
+<div id="pie">   <!-- Pie -->
+    <span class="copyright">
+     &copy; Copyright Ivan Pereira
+ </span>
+ <div class="clear"></div>
+</div>
 </div>
 
 </body>
