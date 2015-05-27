@@ -1,10 +1,10 @@
 <?php 
 include_once("conexio.class.php");
 
-class Cliente{
+class persona{
  //constructor	
  	var $con;
- 	function Cliente(){
+ 	function persona(){
  		$this->con=new DBManager;
  	}
 

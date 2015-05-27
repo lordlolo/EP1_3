@@ -2,7 +2,7 @@
 //-----------Alta Usuari----------------//
 
 if(isset($_POST['submit'])){
-	require('classes/cliente.class.php');
+	require('classes/persona.class.php');
 	
 	function altaUsuari(){
 		$nom = htmlspecialchars(trim($_POST['nombre']));
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 		$email = htmlspecialchars(trim($_POST['mail']));
 		$pass = htmlspecialchars(trim($_POST['pass1']));
 
-		$objPersona = new Cliente;
+		$objPersona = new persona;
 		if ( $objPersona->insertar(array($nom,$cognom,$tel,$dataN,$adr,$pais,$pob,$codip,$dadesB,$email,$pass)) == true){
 			echo "dades introduïdes";
 		}else{
