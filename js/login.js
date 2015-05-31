@@ -27,6 +27,15 @@ $(document).ready(function(){
             alert('Has clickat a entrar');
         });   
     });
+
+    $(function() {
+        var LDAP = $("#LDAP");
+        LDAP.on("click",function() {
+            alert('Has ckickat a LDAP');
+        });
+    });
+
+
 });
 
 
