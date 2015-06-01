@@ -2,17 +2,17 @@
 //-----------Alta Usuari----------------//
 	require('classes/persona.class.php');
 		
-		// $nom = $_POST['nombre'];
-		// $cognom = $_POST['apellidos'];
-		// $tel = $_POST['telefon'];
-		// $dataN = $_POST['data'];
-		// $adr = $_POST['adresa'];
-		// $pais = $_POST['pais'];
-		// $pob = $_POST['poblacio'];
-		// $codip = $_POST['codp'];
-		// $dadesB = $_POST['banc'];
-		// $email = $_POST['email'];
-		// $pass = $_POST['contrasena'];
+		$nom = $_POST['nombre'];
+		$cognom = $_POST['apellidos'];
+		$tel = $_POST['telefon'];
+		$dataN = $_POST['data'];
+		$adr = $_POST['adresa'];
+		$pais = $_POST['pais'];
+		$pob = $_POST['poblacio'];
+		$codip = $_POST['codp'];
+		$dadesB = $_POST['banc'];
+		$email = $_POST['email'];
+		$pass = $_POST['contrasena'];
 
 
 		// echo $nom;
