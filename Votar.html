@@ -4,22 +4,22 @@
 
 <head>
     <meta http-equiv="Content-Type" content="Forum/html; charset=iso-8859-1" />
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./" />
     <title>Democràcia Andorra</title>
     <link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="./CSS/menu.css">
-    <script> function Votar (){
-      alert("Gràcies per votar")}
-  </script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/ValForm.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <body>
     <div id="contenedor">    <!-- Contenedor -->
         <div id="bar">
             <div id="loginContainer">
-                <a href="#" id="loginButton"><span>Entra</span></a>
+                <a href="#" id="loginButton"><span>Entrar</span></a>
                 <div style="clear:both"></div>
                 <div id="loginBox">                
                     <form id="loginForm">
@@ -32,7 +32,8 @@
                                 <label for="password">Contrasenya</label>
                                 <input type="password" name="password" id="password" />
                             </fieldset>
-                            <input type="submit" id="login" value="Entra" />
+                            <input type="submit" id="login" value="Entrar" />
+                            <input type="button" id="LDAP" value="Via LDAP" />
                             <label for="checkbox"><input type="checkbox" id="checkbox" />Enrecordar</label>
                         </fieldset>
                         <span><a href="#">Has olvidat la contrasenya?</a></span>
@@ -42,8 +43,8 @@
             <!-- Login Ends Here -->
         </div>
         <div id="cabecera">   <!-- Cabecera -->
-           <h1>Democràcia Andorra</h1>
-           <div id="buscador">
+         <h1>Democràcia Andorra</h1>
+         <div id="buscador">
             <form action="" method="get">
                 <fieldset>
                 	<legend>Buscador</legend>
@@ -59,8 +60,8 @@
 
     <ul id="nav">
         <li><a href="./Index.html">Inici</a></li>
-        <li><a href="./Enquestes.html">Enquestes</a></li>
-        <li><a href="./Referendum.html">Referendum</a></li>
+        <li><a href="./Llista_Enquestes.html">Enquestes</a></li>
+        <li><a href="./Llistes_Referendum.html">Referendum</a></li>
         <li><a href="./Votar.html">Votar</a></li>
         <li><a href="./Forum.html">Forum</a></li>
         <li><a href="./Formulario.html">Inscriu-te</a></li>
@@ -79,24 +80,74 @@
     </ul>
     <div class="clear"></div>
 
-<div id="contenido">  <!-- Contenido -->
-    <form action="./Index.html" method="post"> 
-        <h2>Partits disponibles</h2>
-        <input type="radio" name="Partit" value="A" checked="checked" /> Partit A <br/>
-        <input type="radio" name="Partit" value="B" /> Partit B </br>
-        <input type="radio" name="Partit" value="C" /> Partit C </br>
-        <input type="radio" name="Partit" value="D" /> Partit D </br>
-        <input type="radio" name="Partit" value="Blanc" /> Vot Blanc </br>
-        <br/><br/> 
-        <input type="submit" name="enviar" value="Votar" onclick=Votar() />
-    </form>
-</div>
+    <div id="contenido">  <!-- Contenido -->
+        <form action="./Votar.html" method="post"> 
+             <fieldset>
+                <legend>Formulari de votacio</legend>
+                Nom <br/>
+                <input type="text" id="nombre" name="nombre" value="" size="40" maxlength="30" />
+                <div id="nerr" style= "display: none;">Entra un minin de 2 lletres i un màxim de 20 lletres</div>             
+                <br/>
 
-<div id="pie">   <!-- Pie -->
+                Cognoms <br/>
+                <input type="text" id="apellido" name="apellidos" value="" size="40" maxlength="80" />
+                <div id="cerr" style= "display: none;">Entra un minin de 2 lletres i un màxim de 20 lletres</div> 
+                <br/>
+
+                Data de naixement </br>
+                <input type="text" id="datepicker" size="40"/>
+                <br/>
+
+                Adreça <br/>
+                <input type="text" id="adreca" name="adreça" value="" size="40" maxlength="80" />
+                <div id="aerr" style= "display: none;">Entra una adreça</div> 
+                <br/>
+
+                País <br/>
+                <input type="text" id="pais" name="pais" value="Andorra" size="40" maxlength="9" /> 
+                <br/>
+
+                Població <br/>
+                <input type="text" list="listapob" id="pob" name="poblacio" value="" size="40" maxlength="20">
+                <datalist id="listapob">
+                  <option value="Ordino"></option>
+                  <option value="La Massana"></option>
+                  <option value="Canillo"></option>
+                  <option value="Encamp"></option>
+                  <option value="Escaldes-Engordany"></option>
+                  <option value="Andorra la Vella"></option>
+                  <option value="Sant Julià de Lòria"></option>
+              </datalist>  
+              <br>  
+
+              Codi Postal <br/>
+              <input type="text" list="listacodp" id="codp" name="codi postal" value="" size="40" maxlength="9" />
+              <datalist id="listacodp">
+                  <option value="AD100"></option>
+                  <option value="AD200"></option>
+                  <option value="AD300"></option>
+                  <option value="AD400"></option>
+                  <option value="AD500"></option>
+                  <option value="AD600"></option>
+                  <option value="AD700"></option>
+              </datalist>
+              <br/>
+              <input type="radio" name="Partit" value="A" checked="checked" /> Partit A <br/>
+              <input type="radio" name="Partit" value="B" /> Partit B </br>
+              <input type="radio" name="Partit" value="C" /> Partit C </br>
+              <input type="radio" name="Partit" value="D" /> Partit D </br>
+              <input type="radio" name="Partit" value="Blanc" /> Vot Blanc </br>
+          </fieldset>
+          <br/><br/> 
+          <input type="submit" id="save" name="enviar" value="Votar"/>
+      </form>
+  </div>
+
+  <div id="pie">   <!-- Pie -->
     <span class="copyright">
-     &copy; Copyright Ivan Pereira
- </span>
- <div class="clear"></div>
+       &copy; Copyright Ivan Pereira
+   </span>
+   <div class="clear"></div>
 </div>
 </div>
 

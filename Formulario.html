@@ -19,7 +19,7 @@
   <div id="contenedor">    <!-- Contenedor -->
     <div id="bar">
       <div id="loginContainer">
-        <a href="#" id="loginButton"><span>Entra</span></a>
+        <a href="#" id="loginButton"><span>Entrar</span></a>
         <div style="clear:both"></div>
         <div id="loginBox">                
           <form id="loginForm">
@@ -32,7 +32,8 @@
                 <label for="password">Contrasenya</label>
                 <input type="password" name="password" id="password" />
               </fieldset>
-              <input type="submit" id="login" value="Entra" />
+              <input type="submit" id="login" value="Entrar" />
+              <input type="button" id="LDAP" value="Via LDAP" />
               <label for="checkbox"><input type="checkbox" id="checkbox" />Enrecordar</label>
             </fieldset>
             <span><a href="#">Has olvidat la contrasenya?</a></span>
@@ -56,27 +57,28 @@
    <div class="clear"></div>
  </div>
 
-   <ul id="nav">
-    <li><a href="./Index.html">Inici</a></li>
-    <li><a href="./Enquestes.html">Enquestes</a></li>
-    <li><a href="./Referendum.html">Referendum</a></li>
-    <li><a href="./Votar.html">Votar</a></li>
-    <li><a href="./Forum.html">Forum</a></li>
-    <li><a href="./Formulario.html">Inscriu-te</a></li>
-    <li><a href="./Videos.html">Videos</a></li>
-    <li><a href="./Audio.html">Audio</a></li>
-    <li><a href="./PDFS.html">PDFs</a></li>
-    <li><a href="#">Admin</a>
-      <ul class="subs">
-        <li><a href="JsonXml.html">Json/XML</a></li>
-        <li><a href="usuaris.html">Usuaris</a></li>
-        <li><a href="multimedia.html">Multimèdia</a></li>
-        <li><a href="Participacions.html">Participació</a></li>
-      </ul>
-    </li>
-    <div id="lavalamp"></div> 
-  </ul>
-  <div class="clear"></div>
+
+ <ul id="nav">
+  <li><a href="./Index.html">Inici</a></li>
+  <li><a href="./Llista_Enquestes.html">Enquestes</a></li>
+  <li><a href="./Llistes_Referendum.html">Referendum</a></li>
+  <li><a href="./Votar.html">Votar</a></li>
+  <li><a href="./Forum.html">Forum</a></li>
+  <li><a href="./Formulario.html">Inscriu-te</a></li>
+  <li><a href="./Videos.html">Videos</a></li>
+  <li><a href="./Audio.html">Audio</a></li>
+  <li><a href="./PDFS.html">PDFs</a></li>
+  <li><a href="#">Admin</a>
+    <ul class="subs">
+      <li><a href="JsonXml.html">Json/XML</a></li>
+      <li><a href="usuaris.html">Usuaris</a></li>
+      <li><a href="multimedia.html">Multimèdia</a></li>
+      <li><a href="Participacions.html">Participació</a></li>
+    </ul>
+  </li>
+  <div id="lavalamp"></div> 
+</ul>
+<div class="clear"></div>
 
 <div id="contenido">  <!-- Contenido -->    
   <form action="./php/altaUsuari.php" method="post" >
@@ -157,7 +159,7 @@
     <br/>
 
     Repeteix Contrasenya <br/>
-    <input type="password" id="pass2" name="contreseña" value="" size="40" maxlength="80" />
+    <input type="password" id="pass2" name="contraseña" value="" size="40" maxlength="80" />
     <div id="perr2" style= "display: none;">Les contrasenyes han de coincidir</div> 
     <br/>
   </fieldset>
