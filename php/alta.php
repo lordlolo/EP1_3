@@ -1,28 +1,20 @@
 <?php
-//-----------Alta Usuari----------------//
+	if($_POST['quin'] == 'multi'){
+		require('classes/multi.class.php');
 
-if(isset($_POST['submit'])){
-	require('classes/persona.class.php');
-	
-	function altaUsuari(){
-		$nom = htmlspecialchars(trim($_POST['nombre']));
-		$cognom = htmlspecialchars(trim($_POST['apellidos']));
-		$tel = htmlspecialchars(trim($_POST['Telefono']));
-		$dataN = htmlspecialchars(trim($_POST['datepicker']));
-		$adr = htmlspecialchars(trim($_POST['adreca']));
-		$pais = htmlspecialchars(trim($_POST['pais']));
-		$pob = htmlspecialchars(trim($_POST)['pob']);
-		$codip = htmlspecialchars(trim($_POST['codp']));
-		$dadesB = htmlspecialchars(trim($_POST['banc']));
-		$email = htmlspecialchars(trim($_POST['mail']));
-		$pass = htmlspecialchars(trim($_POST['pass1']));
+			$tipus_multi = $_POST['tiups'];
+			$titol_multi = $_POST['titol'];
+			$descrip_multi = $_POST['descrip'];
+			$url_multi = $_POST['url'];
 
-		$objPersona = new persona;
-		if ( $objPersona->insertar(array($nom,$cognom,$tel,$dataN,$adr,$pais,$pob,$codip,$dadesB,$email,$pass)) == true){
-			echo "dades introduïdes";
-		}else{
-			echo "ERROR!!";
-		}
+			$objMulti = new multi;
+
+			if($objMulti->insertar(array($tipus_multi,$titol_multi,$descrip_multi,$url_multi)) == true){
+				header('Location: llistat.php');
+			}else{
+				header('Location: error');
+			}
+
 	}
-}
+
 ?>

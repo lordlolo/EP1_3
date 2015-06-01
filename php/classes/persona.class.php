@@ -10,8 +10,8 @@ class persona{
 
 	function insertar($campos){
 		if($this->con->conectar()==true){
-			//print_r($campos);
-			return mysql_query("INSERT INTO persona (Nom, Cognoms, Telefon, dataNaixement, Adreça, Pais, Poblacio, CodiPostal, DadesBanc, Email, Password) VALUES ('".$campos[0]."', '".$campos[1]."','".$campos[2]."','".$campos[3]."','".$campos[4]."','".$campos[5]."','".$campos[6]."','".$campos[7]."','".$campos[8]."','".$campos[9]."','".$campos[10]."')");
+			print_r($campos);
+			return mysql_query("INSERT INTO persona (Nom, Cognoms, Telefon, dataNaixement, Adreca, Pais, Poblacio, CodiPostal, DadesBanc, Email, Password) VALUES ('".$campos[0]."','".$campos[1]."','".$campos[2]."','".$campos[3]."','".$campos[4]."','".$campos[5]."','".$campos[6]."','".$campos[7]."','".$campos[8]."','".$campos[9]."','".$campos[10]."')");
 		}
 	}
 	
@@ -22,13 +22,13 @@ class persona{
 		}
 	}
 	
-	function mostrar_cliente($id){
+	function mostrar_persona($id){
 		if($this->con->conectar()==true){
 			return mysql_query("SELECT * FROM persona WHERE id=".$id);
 		}
 	}
 
-	function mostrar_clientes(){
+	function mostrar_persones(){
 		if($this->con->conectar()==true){
 			return mysql_query("SELECT * FROM persona ORDER BY id DESC");
 		}
