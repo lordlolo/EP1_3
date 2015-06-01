@@ -8,9 +8,13 @@
 	<title>Democracia Andorra</title>
 	<link rel="stylesheet" type="text/css" href="./CSS/PR1.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="./CSS/menu.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/login.js"></script>
-	<script src="js/indexed.js"></script>
+	<script type="text/javascript" src="js/PeticioJSON.js"></script>
 </head>
 
 <body>
@@ -69,7 +73,7 @@
 					<ul class="subs">
 						<li><a href="JsonXml.html">Json/XML</a></li>
 						<li><a href="usuaris.html">Usuaris</a></li>
-						<li><a href="multimedia.html">Multimedia</a></li>
+						<li><a href="#">Multimedia</a></li>
 						<li><a href="participacions.html">Participacio</a></li>
 					</ul>
 				</li>
@@ -78,48 +82,16 @@
 			<div class="clear"></div>
 
 		<div id="contenido">  <!-- Contenido -->
-			<section id="cajaformulario">
-				<fieldset>
-					<legend id="titol">Arxiu:</legend>
-					<div id="formulario">
-						CodiDP <br/>
-						<select id="combo" name="comboCodi">
-						</select>	
-						<input type="text" id="clave" name="clave" value="" size="40"/>            
-						<br/>
 
-						Tipus <br/>
-						<input type="text" id="texto" name="texto" value="" size="40"/>
-						<br/>
+		<input type="button" id="provaM" value="Prova"></input>
+		<input type="button" id="afegirM" value="afergir"></input>
+			
+			<div id="result">
+			</div>
 
-						Pregunta <br/>
-						<input type="text" id="pregunta" name="pregunta" value="" size="40" /> 
-						<br/>
+			<div id="afegir">
+			</div>
 
-						DataO <br/>
-						<input type="text" id="fechaO" name="fechaO" value="" size="40" /> 
-						<br/>
-
-						DataF <br/>
-						<input type="text" id="fechaF" name="fechaF" value="" size="40" /> 
-					</div>
-
-					<div id="crud">
-						<input type="button" id="boto1" name="boto1" value="Mostrar JSON"/>
-						<input type="button" id="boto2" name="boto2" value="Mostrar XML"/>
-
-						<input type="button" id="boto3" name="boto3" value="Inserir en JSON"/>
-						<input type="button" id="boto4" name="boto4" value="Inserir en XML"/>	
-
-						<input type="button" id="boto5" name="boto5" value="Modificar"/>	
-						<input type="button" id="boto6" name="boto6" value="Esborrar"/>	
-					</div>
-					
-				</fieldset>
-			</section>
-			<section id="zonadatos">
-				<br>
-			</section>
 		</div>
 
 		<div id="pie">   <!-- Pie -->

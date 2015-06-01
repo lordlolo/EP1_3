@@ -69,9 +69,9 @@
     <li><a href="#">Admin</a>
       <ul class="subs">
         <li><a href="JsonXml.html">Json/XML</a></li>
-        <li><a href="#">Usuaris</a></li>
-        <li><a href="#">Multimèdia</a></li>
-        <li><a href="#">Participació</a></li>
+        <li><a href="usuaris.html">Usuaris</a></li>
+        <li><a href="multimedia.html">Multimèdia</a></li>
+        <li><a href="Participacions.html">Participació</a></li>
       </ul>
     </li>
     <div id="lavalamp"></div> 
@@ -79,7 +79,7 @@
   <div class="clear"></div>
 
 <div id="contenido">  <!-- Contenido -->    
-  <form action="./Formulario.html" method="post" >
+  <form action="./php/altaUsuari.php" method="post" >
    <fieldset>
     <legend>DADES PERSONALS</legend>
     Nom <br/>
@@ -93,25 +93,16 @@
     <br/>
 
     Telèfon <br/>
-    <input type="text" id="telefono" name="Telefono" value="+376" size="40" maxlength="12" />
+    <input type="text" id="telefono" name="telefon" value="+376" size="40" maxlength="12" />
     <div id="err" style= "display: none;">Entra 6 digits</div> 
     <br/>
 
     Data de naixement </br>
-    <input type="text" id="datepicker" size="40"/>
-    <br/>
-
-    Telèfon <br/>
-    <input type="text" id="telefono" name="Telefono" value="+376" size="40" maxlength="12" />
-    <div id="err" style= "display: none;">Entra 6 digits</div> 
-    <br/>
-
-    Data de naixement </br>
-    <input type="text" id="datepicker" size="40"/>
+    <input type="text" id="datepicker" name="data" size="40"/>
     <br/>
 
     Adreça <br/>
-    <input type="text" id="adreca" name="adreça" value="" size="40" maxlength="80" />
+    <input type="text" id="adreca" name="adresa" value="" size="40" maxlength="80" />
     <div id="aerr" style= "display: none;">Entra una adreça</div> 
     <br/>
 
@@ -133,7 +124,7 @@
     <br>  
 
     Codi Postal <br/>
-    <input type="text" list="listacodp" id="codp" name="codi postal" value="" size="40" maxlength="9" />
+    <input type="text" list="listacodp" id="codp" name="codp" value="" size="40" maxlength="9" />
     <datalist id="listacodp">
       <option value="AD100"></option>
       <option value="AD200"></option>
@@ -146,7 +137,7 @@
     <br/>
 
     Dades Bancàries <br/>
-    <input type="text" id="banc" name="dades bancaries" value="" size="40" maxlength="30" />
+    <input type="text" id="banc" name="banc" value="" size="40" maxlength="30" />
     <div id="dberr" style= "display: none;">Entra el format IBAN Andorrà (ADXX 000X XXXX XXXX XXXX XXXX)</div> 
     <br/>
   </fieldset>
@@ -154,12 +145,12 @@
   <fieldset>
     <legend>NOU USUARI</legend>
     Email <br/>
-    <input type="text" id="mail" name="email" placeholder="exemple@exemple.com" size="40" maxlength="80" />
+    <input type="text" id="email" name="email" placeholder="exemple@exemple.com" size="40" maxlength="80" />
     <div id="merr" style= "display: none;">Entra un email</div> 
     <br/>
 
     Contrasenya <br/>
-    <input type="password" id="pass1" name="contreseña" value="" size="40" maxlength="80" />
+    <input type="password" id="pass1" name="contrasena" value="" size="40" maxlength="80" />
     <div id="perr" style= "display: none;">
       Entra una contrasenya amb mínim una lletra majúscula, una minúscula, 2 dígits numèrics i una llargada mínima de 6 caràcters
     </div> 
@@ -172,7 +163,7 @@
   </fieldset>
 
 </br>     
-<input type="submit" id="save" name="enviar" value="Inscriu-te" />
+<input type="submit" id="button" name="enviar" value="Inscriu-te" />
 <input type="reset" name="limpiar" value="Borrar les dades introduïdes" />
 <input type="button" id="mostrar" name="ver" value="Mostrar les dades introduïdes" /> 
 </form>   
